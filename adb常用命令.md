@@ -9,6 +9,9 @@ adb shell am start packagename/activity_name
 * example
 adb shell am start -n com.test.jkwang/com.test.jkwang.helloactivity
 
+#### 获取系统中当前所有栈的Activity信息
+adb shell dumpsys activity activities
+
 #### 获取屏幕
 adb shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > screen.png
 
